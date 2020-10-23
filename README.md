@@ -4,6 +4,8 @@ This plugins allows to connect to an MQTT Message broker to receive sensor data 
 
 Change this to work with Tastmota relays and multiple DS18B20 sensors attached to same Tastmota device.
 
+*** Payload for the sensors is now the device Ids, not the payload location
+
 https://tasmota.github.io/docs/DS18x20/
 
 
