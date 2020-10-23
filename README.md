@@ -2,6 +2,9 @@
 
 This plugins allows to connect to an MQTT Message broker to receive sensor data and invoke actors.
 
+Change this to work with Tastmota relays and multiple DS18B20 sensors attached to same Tastmota device.
+
+https://tasmota.github.io/docs/DS18x20/
 
 
 ## Installation
