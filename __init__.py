@@ -160,10 +160,10 @@ class MQTT_SENSOR(SensorActive):
                             if value.config["b_payload"] == DSid:
                                 ConvTemp=0
                                 if self.get_config_parameter("unit", "C") == sensorUnits:
-                                    ConvTemp=(round(float(sensorDict[str(DSid)]) + float(self.d_offset), 2))
+                                    ConvTemp=(round(float(sensorDict[str(DSid)]) + float(value.config["d_offset"]), 2))
                                     self.unit="C"
                                 else:
-                                    ConvTemp=(round(9.0 / 5.0 * float(sensorDict[str(DSid)]) + 32 + float(self.d_offset), 2))
+                                    ConvTemp=(round(9.0 / 5.0 * float(sensorDict[str(DSid)]) + 32 + float(value.config["d_offset"]), 2))
                                     self.unit="F"
 
                                 q.put({"id": value.id, "value": ConvTemp})
